@@ -165,7 +165,7 @@ O projeto será desenvolvido por uma equipe de seis integrantes, com divisão cl
 
 - Apoio na estruturação das páginas de cadastro e navegação no frontend
 
-### Marcus Vinicius Monteiro da Silva Costa
+### ---
 
 **Função:** Modelagem de Dados e Validações
 
@@ -179,7 +179,7 @@ O projeto será desenvolvido por uma equipe de seis integrantes, com divisão cl
 
 - Apoio na validação de formulários no frontend (JavaScript)
 
-### Aluísio Rodrigues Júnior
+### ---
 
 **Função:** Testes e Validação Técnica
 

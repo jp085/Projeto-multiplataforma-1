@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Sistema de Controle de Estoque</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h2>Estoque</h2>
+    <ul>
+      <li class="active">Dashboard</li>
+      <li>Produtos</li>
+      <li>Estoque</li>
+      <li>Entradas</li>
+      <li>Saídas</li>
+      <li>Relatórios</li>
+      <li>Configurações</li>
+    </ul>
+  </aside>
+
+  <!-- Conteúdo -->
+  <main class="main">
+
+    <header>
+      <h1>Sistema de Controle de Estoque</h1>
+    </header>
+
+    <!-- Cards -->
+    <section class="cards">
+      <div class="card blue">Produtos: <strong>320</strong></div>
+      <div class="card red">Estoque Baixo: <strong>12</strong></div>
+      <div class="card green">Vendas: <strong>R$ 15.400</strong></div>
+      <div class="card dark">Alertas: <strong>3</strong></div>
+    </section>
+
+    <!-- Gráfico -->
+    <section class="grid">
+      <div class="box">
+        <h3>Gráfico de Vendas</h3>
+        <canvas id="grafico"></canvas>
+      </div>
+
+      <div class="box">
+        <h3>Top Produtos</h3>
+        <ol>
+          <li>Camiseta Básica</li>
+          <li>Tênis Esportivo</li>
+          <li>Mochila Executiva</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Movimentações -->
+    <section class="grid">
+      <div class="box">
+        <h3>Movimentações</h3>
+        <p>Entrada: 10x Mouse</p>
+        <p>Saída: 5x Calça</p>
+        <p>Ajuste: 2x Caneta</p>
+      </div>
+
+      <div class="box">
+        <h3>Alertas</h3>
+        <p>Refil de tinta baixo</p>
+        <p>Shampoo baixo</p>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<script src="script.js"></script>
+const ctx = document.getElementById('grafico');
+
+new Chart(ctx, {
+  type: 'line',
+  data: {
+    labels: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun'],
+    datasets: [{
+      label: 'Vendas',
+      data: [50, 120, 90, 150, 200, 250],
+      borderColor: '#3b82f6',
+      backgroundColor: 'rgba(59,130,246,0.2)',
+      fill: true
+    }]
+  },
+  options: {
+    responsive: true
+  }
+});
+</body>
+</html>

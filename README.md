@@ -69,23 +69,21 @@ Arquitetura prevista:
 
 - Autenticação baseada em JWT
 
-- Banco de dados NoSQL com Mongoose
+- Banco de dados SQL com MySQL
 
-- Integrações externas para enriquecimento de dados
+- API para sistemas externos
 
 ---
 
 ## Tecnologias Propostas
 
 ### Backend
-- **Node.js** — ambiente de execução backend
+- **PHP** — ambiente de execução backend
 - **Express.js** — framework para rotas e middlewares
-- **MongoDB + Mongoose** — banco de dados NoSQL
+- **MySQL** — banco de dados SQL
 - **JWT** — autenticação segura
 - **Jest + Supertest** — testes automatizados
 - **Dotenv** — gerenciamento de variáveis de ambiente
-- **ViaCEP API** — consulta de endereço por CEP
-- **OpenWeather API** — consulta de clima por cidade
 
 ### Frontend
 - **HTML5** — estruturação das páginas
@@ -96,21 +94,21 @@ Arquitetura prevista:
 
 ## Cronograma para Etapa 2 (Implementação do Projeto)
 
-A Etapa 2 será dedicada à implementação prática do projeto ConectaBairro, contemplando o desenvolvimento do backend e frontend da aplicação. O cronograma abaixo distribui as atividades por semana, considerando a complexidade técnica e a colaboração entre os integrantes da equipe:
+A Etapa 2 será dedicada à implementação prática do projeto Inven, contemplando o desenvolvimento do backend e frontend da aplicação. O cronograma abaixo distribui as atividades por semana, considerando a complexidade técnica e a colaboração entre os integrantes da equipe:
 
 | Semana | Atividades                                                                 |
 |--------|-----------------------------------------------------------------------------|
 | 1      | Configuração inicial do repositório, estrutura de pastas e variáveis de ambiente |
 | 2      | Desenvolvimento do backend: rotas, controllers, models, serviços e autenticação |
-| 3      | Implementação dos testes automatizados e integração com APIs externas (ViaCEP e OpenWeather) |
+| 3      | Implementação dos testes automatizados |
 | 4      | Início do frontend: estruturação das páginas com HTML e CSS responsivo     |
-| 5      | Adição de interatividade com JavaScript e integração com a API             |
+| 5      | Adição de interatividade com JavaScript |
 | 6      | Validação técnica, ajustes finais, documentação complementar e entrega do projeto |
 
 ## Integrantes da Equipe e Seus Papéis
 O projeto será desenvolvido por uma equipe de seis integrantes, com divisão clara de responsabilidades desde o planejamento. Cada membro atuará em áreas específicas do backend e frontend, garantindo organização, rastreabilidade e colaboração eficiente.
 
-### Elayne Nascimento Lima
+### João Paulo Gomes dos Santos
 
 **Função:** Líder Técnica e Desenvolvedora Principal 
 
@@ -122,40 +120,40 @@ O projeto será desenvolvido por uma equipe de seis integrantes, com divisão cl
 
 - Criação do middleware de autenticação com JWT
 
-- Desenvolvimento do serviço de integração com a API ViaCEP
+- Desenvolvimento da API para comunicação com outros sistemas
 
-- Estruturação dos arquivos principais do servidor (server.js, app.js, utils.js)
+- Estruturação dos arquivos principais do servidor (index, dotenv)
 
 - Organização da documentação técnica e do README
 
 - Apoio na estruturação do frontend (HTML base e organização das seções)
 
-### Gilssilany Valentino Chaves
+### THAMIRES GUEDES MOURA LOPES
 **Função:** Autenticação e Segurança
 
 **Responsabilidades Planejadas:**
 
 - Implementação do controller de usuários (cadastro e login)
 
-- Configuração da conexão com o banco de dados MongoDB
+- Configuração da conexão com o banco de dados MySql
 
 - Validação de tokens JWT e proteção de rotas
 
 - Apoio na criação da página de login no frontend
 
-### Igor Marcelo de Sousa Freire
+### PAULO RAFAEL BAIMA CAVALCANTE
 
 **Função:** Integração com Serviços Externos
 
 **Responsabilidades Planejadas:**
 
-- Desenvolvimento dos serviços de clima e CEP (OpenWeather e ViaCEP)
+- Apoio no desenvolvimento das API para comunicação com outros sistemas
 
 - Implementação dos controllers e rotas externas
 
-- Apoio na exibição de dados climáticos no frontend
+- Apoio na criação de logs de chamadas das API
 
-### Francisco Eudes Rodrigues da Silva
+### ----
 
 **Função:** Documentação Técnica e Estrutura de Rotas 
 

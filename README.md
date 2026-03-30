@@ -45,9 +45,7 @@ Objetivos Específicos:
 
 - Implementar autenticação segura via JWT
 
-- Integrar com serviços externos: ViaCEP e OpenWeather
-
-- Disponibilizar filtros de busca por localização e palavras-chave
+- Disponibilizar filtros de busca por código e palavras-chave
 
 - Planejar interfaces para web e dispositivos móveis
 
@@ -57,9 +55,9 @@ Objetivos Específicos:
 
 ## Escopo do Projeto
 
-O escopo do ConectaBairro abrange o desenvolvimento de uma aplicação multiplataforma composta por backend (API RESTful em Node.js/Express), banco de dados NoSQL (MongoDB), integração com serviços externos (ViaCEP e OpenWeather), e frontend web/mobile responsivo.  
-O sistema permitirá o cadastro, consulta, edição e exclusão de empreendimentos locais, autenticação de usuários via JWT, listagem e busca com filtros, além da exibição de informações climáticas por cidade.  
-Estão fora do escopo, nesta etapa, funcionalidades de marketplace, pagamentos online ou gestão financeira dos empreendimentos.
+O escopo do Inven abrange o desenvolvimento de uma aplicação multiplataforma composta por backend (API RESTful em PHP), banco de dados SQL (MySql), integração com serviços externos (Caso haja necessidade), e frontend web/mobile responsivo.  
+O sistema permitirá o cadastro, consulta, edição e exclusão de materiais, controle de avarias, registro de venda (forma de pagamento).
+Estão fora do escopo, nesta etapa, funcionalidades de bipagem, pagamentos online ou gestão financeira dos empreendimentos.
 
 ---
 

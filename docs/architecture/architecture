@@ -1,4 +1,4 @@
-# Arquitetura do Sistema ConectaBairro
+# Arquitetura do Sistema Inven
 
 Este documento descreve a arquitetura planejada para o sistema **Inven**.  
 O objetivo é apresentar de forma clara os componentes principais, os padrões arquiteturais que serão adotados, o diagrama de arquitetura e as decisões técnicas que fundamentarão o projeto.  

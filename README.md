@@ -79,7 +79,6 @@ Arquitetura prevista:
 
 ### Backend
 - **PHP** — ambiente de execução backend
-- **Express.js** — framework para rotas e middlewares
 - **MySQL** — banco de dados SQL
 - **JWT** — autenticação segura
 - **Jest + Supertest** — testes automatizados
@@ -153,7 +152,7 @@ O projeto será desenvolvido por uma equipe de seis integrantes, com divisão cl
 
 - Apoio na criação de logs de chamadas das API
 
-### ----
+### ---- GABRIEL EDUARDO BRASIL ROCHA BEZERRA
 
 **Função:** Documentação Técnica e Estrutura de Rotas 
 
@@ -165,7 +164,7 @@ O projeto será desenvolvido por uma equipe de seis integrantes, com divisão cl
 
 - Apoio na estruturação das páginas de cadastro e navegação no frontend
 
-### ---
+### --- DESIREH MHARINNES ANNA GOMES DE ARAUJO 
 
 **Função:** Modelagem de Dados e Validações
 
@@ -179,13 +178,11 @@ O projeto será desenvolvido por uma equipe de seis integrantes, com divisão cl
 
 - Apoio na validação de formulários no frontend (JavaScript)
 
-### ---
+### --- NARCELIO BARBOSA DA COSTA 
 
 **Função:** Testes e Validação Técnica
 
 **Responsabilidades Planejadas:**
-
-- Estruturação dos testes automatizados com Jest e Supertest
 
 - Testes manuais das rotas públicas e protegidas
 

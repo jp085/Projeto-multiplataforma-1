@@ -23,29 +23,29 @@ O modelo de dados do projeto Inven foi planejado para garantir flexibilidade, in
 
 ## Descrição das entidades e relacionamentos
 
-O sistema é composto por seis entidades principais:
+O sistema é composto por xxx entidades principais:
 
 PARTE PARA AJUSTAR...
 
-- USUARIO: representa os usuários da plataforma, incluindo moradores e empreendedores.
+- DONO/USUARIO: representa os usuários da plataforma.
 
-- EMPREENDIMENTO: representa os negócios cadastrados pelos usuários.
+- MATERIAIS: São os materiais criados pelos usuários.
 
-- ENDERECO: detalha a localização dos empreendimentos.
+- FONTE: Local onde foi adquirido o material/produto originalmente.
 
-- CIDADE: centraliza dados geográficos e permite integração com serviços climáticos.
+- PRECO: Representa o preço dos materiais.
 
-- SERVICO_EXTERNO_OPENWEATHER: armazena dados climáticos obtidos via API externa.
+- MOVI_MATE: Guarda todas as movimentações dos materiais.
+- 
+- ESTO_MATE: Guarda as informações de estoque.
 
 - Relacionamentos:
 
-  - Cada empreendimento pertence a um usuário.
+  - Cada Material está relacionado dono/usuário.
 
-  - Cada empreendimento possui um endereço.
+  - Cada Material está relacionado a uma ou mais fontes.
 
-  - Cada endereço está vinculado a uma cidade.
-
-  - Cada cidade pode consultar dados climáticos via serviço externo.
+  - Cada Material está relacionado a tabela de estoque.
 
 ---
 
@@ -59,64 +59,66 @@ A imagem abaixo representa visualmente o modelo de dados e os relacionamentos en
 
 ## Dicionário de dados
 
-### USUARIO
+### USUARIOS
 
 | Campo      | Tipo   | Descrição                          |
 |------------|--------|------------------------------------|
-| `_id`      | string | Identificador único do usuário     |
-| `nome`     | string | Nome completo                      |
-| `email`    | string | Email único para login             |
-| `senha`    | string | Senha criptografada                |
-| `createdAt`| date   | Data de criação do registro        |
-| `updatedAt`| date   | Data da última atualização         |
+| `idusers`      | int | Identificador único do usuário     |
+| `nome`     | Varchar | Nome completo                      |
+| `nomered`    | Varchar | Nome reduzido             |
+| `senha`    | Varchar | Senha criptografada                |
+| `data_cria`| date   | Data de criação do registro        |
+| `data_atua`| date   | Data da última atualização         |
 
 ---
 
-### EMPREENDIMENTO
+### MATERIAIS
 
 | Campo           | Tipo    | Descrição                                      |
 |-----------------|---------|-----------------------------------------------|
-| `_id`           | string  | Identificador único do empreendimento          |
-| `nome`          | string  | Nome do empreendimento                         |
-| `descricao`     | string  | Descrição dos serviços ou produtos             |
-| `endereco`      | object  | Objeto com os dados de localização             |
-| `telefone`      | string  | Telefone de contato                            |
-| `email`         | string  | Email de contato                               |
-| `palavrasChave` | array   | Termos para facilitar busca                    |
-| `createdAt`     | date    | Data de criação do registro                    |
-| `updatedAt`     | date    | Data da última atualização                     |
+| `idmateriais`           | int  | Identificador único do material          |
+| `descricaomate`          | Varchar  | Descrição dos materiais                         |
+| `datacad`     | date  | Data de cadastro             |
+| `dataalt`      | date  | Data de alteração/atualização             |
+| `usuarios_idusers`      | int  | Chave estrangeira                            |
 
 ---
 
-### ENDERECO
+### FONTE
 
 | Campo         | Tipo   | Descrição                          |
 |---------------|--------|------------------------------------|
-| `cep`         | string | Código postal                      |
-| `rua`         | string | Nome da rua                        |
-| `bairro`      | string | Bairro                             |
-| `numero`      | string | Número do imóvel                   |
-| `complemento` | string | Complemento (opcional)             |
-| `cidade`      | string | Nome da cidade                     |
-| `estado`      | string | Sigla do estado                    |
+| `id_fonte`         | Varchar | Identificador único da fonte                      |
+| `desc_mate`         | Varchar | Descrição do material                        |
+| `preco_mate`      | double | Preço do material                             |
+| `desc_fonte`      | Varchar | Descrição da fonte                   |
 
 ---
 
-### CIDADE
+### ESTO_MATE
 
 | Campo     | Tipo   | Descrição                          |
 |-----------|--------|------------------------------------|
-| `_id`     | string | Identificador único da cidade      |
-| `nome`    | string | Nome da cidade                     |
-| `estado`  | string | Sigla do estado                    |
+| `esto_quan`     | double | Quantidade de materiais em estoque      |
+| `materiais_ idmateriais`    | int | Chave estrangeira                     |
+| `desc_mate`  | Varchar | Descrição do material                    |
+| `preco_mate`  | double | Preço do material                    |
 
 ---
 
-### SERVICO_EXTERNO_OPENWEATHER
+### MOVI_MATE
 
 | Campo    | Tipo   | Descrição                                   |
 |----------|--------|---------------------------------------------|
-| `cidade` | string | Nome da cidade consultada                   |
-| `clima`  | object | Dados climáticos (temperatura, etc)         |
+| `doc_movi_mate` | int | Chave primária não-nula                   |
+| `desc_mate`  | Varchar | Dados climáticos (temperatura, etc)         |
+| `tipo_movi_mate`  | Varchar | Tipo de movimento         |
+| `saldo_movi_mate`  | double | Valor movimentado         |
+| `materiais_idmateriais`  | int | chave estrangeira         |
+| `desc_user_movi_mate`  | Varchar | Usuário que realizou a movimentação        |
+| `usuarios_idusers`  | int | Chave estrangeira        |
+| `un_movi_mate`  | Varchar | Unidade de medida da movimentação       |
+
+
 
 ---

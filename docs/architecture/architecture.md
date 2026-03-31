@@ -51,7 +51,7 @@ Modularização por responsabilidade: separação em controllers, models, routes
 
 ## Diagrama da Arquitetura
 
-<img alt="gráfico de arquitetura" src="arquitetura.jpg"/>
+<img alt="gráfico de arquitetura" src="Arquitetura.jpg"/>
 
 O diagrama apresentado representa a estrutura conceitual da aplicação Inven, destacando os principais componentes do sistema e suas interações. A arquitetura segue o padrão MVC (Model-View-Controller) adaptado para uma API RESTful que será desenvolvida com PHP e Laravel.
 

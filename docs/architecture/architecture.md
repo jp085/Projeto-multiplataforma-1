@@ -102,3 +102,4 @@ O fluxo representado no diagrama segue esta lógica:
 - No frontend será usado **HTML**, **CSS** e **JS** puro,  garantindo responsividade para acesso via web e dispositivos móveis.
 
 ---
+<img width="1016" height="476" alt="diagrama" src="https://github.com/user-attachments/assets/00a63975-5c5a-4823-bccc-d3113fe47295" />

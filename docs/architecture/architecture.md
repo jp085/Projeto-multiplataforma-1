@@ -27,11 +27,11 @@ O projeto Inven adotará uma arquitetura baseada no padrão MVC (Model-View-Cont
 | Componente                 | Descrição                                                                 |
 |---------------------------|---------------------------------------------------------------------------|
 | Frontend Web/Mobile       | Interface de acesso para usuários (a ser desenvolvida na Etapa 2)         |
-| Backend (API RESTful)     | Responsável por autenticação, CRUD de empreendimentos e integração externa |
+| Backend (API RESTful)     | Responsável por autenticação, CRUD de materiais |
 | Banco de Dados (MySql)    | Armazenará usuários, materiais e dados normalizados                   |
 | Serviços Externos         | integração com outros sistemas com apis direcionadas       |
 | Middleware de Autenticação| Validará tokens JWT e protege rotas sensíveis                               |
-| Testes Automatizados      | Cobrirá os principais fluxos com Jest e Supertest                      |
+| Testes      | Cobrirá os principais fluxos com Jest e Supertest                      |
 
 ---
 
@@ -59,9 +59,9 @@ O diagrama apresentado representa a estrutura conceitual da aplicação Inven, d
 
 Na parte superior do diagrama, temos o Frontend, que será desenvolvido na Etapa 2 utilizando HTML, CSS e JavaScript puro. Ele será responsável por consumir a API, enviando requisições HTTP e exibindo os dados recebidos em formato JSON. O frontend permitirá que usuários realizem buscas, cadastros e visualizações de materiais
 
-### API REST (Express + MVC)
+### API REST (MVC)
 
-O núcleo da aplicação é a API RESTful, que será construída com o framework Express e organizada segundo o padrão MVC. Essa camada estará dividida em três principais controllers:
+O núcleo da aplicação é a API RESTful, que será construída com o framework Laravel e organizada segundo o padrão MVC. Essa camada estará dividida em três principais controllers:
 
 **Usuários Controller**: Gerenciará o cadastro, login e autenticação dos usuários. Estará conectado ao modelo `Usuario.php`, que define a estrutura dos dados no MySQl.
 

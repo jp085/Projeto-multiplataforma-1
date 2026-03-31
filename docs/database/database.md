@@ -53,7 +53,7 @@ PARTE PARA AJUSTAR...
 
 A imagem abaixo representa visualmente o modelo de dados e os relacionamentos entre as entidades do sistema:
 
-<img alt="gráfico de modelo de dados" src="modelo-dados.png"/>
+<img alt="gráfico de modelo de dados" src="Inven_bd.png"/>
 
 ---
 

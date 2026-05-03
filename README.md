@@ -109,7 +109,7 @@ O projeto será desenvolvido por uma equipe de seis integrantes, com divisão cl
 
 ### João Paulo Gomes dos Santos
 
-**Função:** Líder Técnica e Desenvolvedora Principal 
+**Função:** Líder Técnico e Desenvolvedor Principal 
 
 **Responsabilidades Planejadas:**
 

@@ -23,7 +23,7 @@ O modelo de dados do projeto Inven foi planejado para garantir flexibilidade, in
 
 ## Descrição das entidades e relacionamentos
 
-O sistema é composto por xxx entidades principais:
+O sistema é composto por 6 entidades principais:
 
 PARTE PARA AJUSTAR...
 
@@ -111,7 +111,7 @@ A imagem abaixo representa visualmente o modelo de dados e os relacionamentos en
 | Campo    | Tipo   | Descrição                                   |
 |----------|--------|---------------------------------------------|
 | `doc_movi_mate` | int | Chave primária não-nula                   |
-| `desc_mate`  | Varchar | Dados climáticos (temperatura, etc)         |
+| `desc_mate`  | Varchar | Descrição do material         |
 | `tipo_movi_mate`  | Varchar | Tipo de movimento         |
 | `saldo_movi_mate`  | double | Valor movimentado         |
 | `materiais_idmateriais`  | int | chave estrangeira         |
